@@ -54,3 +54,16 @@
 
   observer.observe(processSection);
 })();
+
+(function () {
+  const bgVideo = document.querySelector('.video-background');
+
+  if (!bgVideo) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    bgVideo.removeAttribute('autoplay');
+    bgVideo.pause();
+  }
+})();
