@@ -31,3 +31,26 @@
     }
   });
 })();
+
+(function () {
+  const processSection = document.querySelector('.process');
+
+  if (!processSection) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    processSection.classList.add('is-visible');
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      processSection.classList.add('is-visible');
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(processSection);
+})();
