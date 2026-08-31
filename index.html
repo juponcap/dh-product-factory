@@ -5,16 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DH Product Factory</title>
   <meta name="description" content="DH Product Factory">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <header>
-    <!-- Site header / navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="DH Product Factory home">
+        <img class="logo-img" src="assets/logos/dh_product_factory_charcoal_letters.svg" alt="DH Product Factory">
+      </a>
+
+      <nav aria-label="Primary">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#get-started" class="btn-get-started">Get Started</a>
+    </div>
   </header>
 
   <main>
-    <!-- Page sections go here -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <p class="hero-eyebrow">Digital Health Product Development</p>
+        <h1 class="hero-heading">From healthcare idea<br>to digital product.</h1>
+
+        <div class="hero-decoration" aria-hidden="true">
+          <span class="hero-decoration-line"></span>
+          <span class="hero-decoration-button">
+            <svg viewBox="0 0 24 24" fill="currentColor" focusable="false">
+              <path d="M8 5v14l11-7z"></path>
+            </svg>
+          </span>
+          <span class="hero-decoration-line"></span>
+        </div>
+      </div>
+    </section>
+    <!-- Additional sections go here -->
   </main>
 
   <footer>
