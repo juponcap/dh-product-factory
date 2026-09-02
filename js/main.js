@@ -67,15 +67,3 @@
     bgVideo.pause();
   }
 })();
-
-(function () {
-  const contactForm = document.querySelector('.contact-form');
-
-  if (!contactForm) return;
-
-  // No backend yet — block the actual submission so the browser
-  // doesn't navigate away and discard the visitor's input.
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-  });
-})();
