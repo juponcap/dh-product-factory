@@ -835,7 +835,7 @@ ol {
   .founder-columns {
     display: grid;
     grid-template-columns: 58fr 34fr;
-    align-items: start;
+    align-items: center;
     gap: 114px;
   }
 
@@ -1311,6 +1311,156 @@ ol {
 
   .work-grid-desc {
     font-size: 18px;
+  }
+}
+
+/* ==========================================================================
+   Studio teaser (homepage) — brief positioning statement, points to About
+   ========================================================================== */
+.studio-teaser {
+  background-color: var(--color-dark-bg);
+  padding-block: var(--space-xl);
+}
+
+.studio-teaser-inner {
+  padding-inline: 7.5vw;
+}
+
+.studio-teaser-eyebrow {
+  color: var(--color-accent-blue);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+.studio-teaser-heading {
+  color: var(--color-cream);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.08;
+  margin-bottom: 2rem;
+}
+
+.studio-teaser-columns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.studio-teaser-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.studio-teaser-body {
+  color: var(--color-cream);
+  font-size: 24px;
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+.studio-teaser-statement {
+  color: var(--color-accent-blue);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.studio-teaser-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: var(--space-md) var(--space-xl);
+  border: 1px solid var(--color-accent-blue);
+  border-radius: var(--radius-full);
+  color: var(--color-accent-blue);
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.studio-teaser-cta:hover,
+.studio-teaser-cta:focus-visible {
+  background-color: var(--color-accent-blue);
+  color: var(--color-cream);
+}
+
+.studio-teaser-media {
+  position: relative;
+  width: 100%;
+}
+
+.studio-teaser-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0;
+}
+
+.studio-teaser-badge {
+  position: absolute;
+  bottom: 15%;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--color-cream);
+  color: var(--color-dark-bg);
+}
+
+.studio-teaser-badge svg {
+  width: 28px;
+  height: 28px;
+}
+
+@media (min-width: 1024px) {
+  .studio-teaser {
+    padding-block: 100px;
+  }
+
+  .studio-teaser-inner {
+    padding-inline: 7.5vw;
+  }
+
+  .studio-teaser-eyebrow {
+    font-size: 24px;
+  }
+
+  .studio-teaser-heading {
+    margin-bottom: 60px;
+  }
+
+  .studio-teaser-columns {
+    display: grid;
+    grid-template-columns: 58fr 34fr;
+    align-items: start;
+    gap: 114px;
+  }
+
+  .studio-teaser-body {
+    font-size: 24px;
+    max-width: 620px;
+  }
+
+  .studio-teaser-image {
+    aspect-ratio: 6 / 7;
+  }
+
+  .studio-teaser-badge {
+    width: 64px;
+    height: 64px;
+    right: -28px;
+  }
+
+  .studio-teaser-badge svg {
+    width: 32px;
+    height: 32px;
   }
 }
 
