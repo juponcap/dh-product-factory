@@ -1210,6 +1210,11 @@ ol {
   flex-direction: column;
 }
 
+.work-grid-item-link {
+  display: flex;
+  flex-direction: column;
+}
+
 .work-grid-image-wrap {
   position: relative;
   width: 100%;
