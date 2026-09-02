@@ -65,6 +65,52 @@
   border-radius: 0;
 }
 
+/* Editorial regulatory graphic — used in place of a photo on strategy-led
+   case studies. Six flat brand-color cells in a 2x3 grid, thin gaps acting
+   as rules. Purely decorative; the same terms are explained as real text
+   further down the page. */
+.regulatory-graphic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  background-color: var(--color-dark-bg);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.regulatory-graphic-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.regulatory-graphic-cell--blue {
+  background-color: var(--color-accent-blue);
+  color: var(--color-cream);
+}
+
+.regulatory-graphic-cell--cream {
+  background-color: var(--color-cream);
+  color: var(--color-dark-bg);
+}
+
+.regulatory-graphic-cell--beige {
+  background-color: var(--color-warm-beige);
+  color: var(--color-dark-bg);
+}
+
+.regulatory-graphic-cell--charcoal {
+  background-color: var(--color-dark-bg);
+  color: var(--color-cream);
+  border: 1px solid rgba(247, 244, 237, 0.25);
+}
+
 @media (min-width: 1024px) {
   .project-hero-inner {
     display: grid;
@@ -78,8 +124,14 @@
     font-size: 4.5rem;
   }
 
-  .project-hero-image {
+  .project-hero-image,
+  .regulatory-graphic {
     aspect-ratio: 4 / 5;
+  }
+
+  .regulatory-graphic-cell {
+    font-size: 1.125rem;
+    padding: 2rem;
   }
 }
 
