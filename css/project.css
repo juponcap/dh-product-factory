@@ -21,7 +21,7 @@
 
 .project-hero-category {
   display: block;
-  color: var(--color-accent-blue);
+  color: var(--color-ivory);
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
 
 .project-hero-index {
   display: block;
-  color: var(--color-accent-blue);
+  color: var(--color-ivory);
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -193,7 +193,7 @@
    Eyebrow (shared across sections)
    -------------------------------------------------------------------------- */
 .project-eyebrow {
-  color: var(--color-accent-blue);
+  color: var(--color-ivory);
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
