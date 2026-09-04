@@ -424,19 +424,24 @@ ol {
 .process {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: var(--color-dark-bg);
+  padding: var(--space-md);
+  gap: var(--space-md);
 }
 
 .process-col {
   padding: var(--space-lg) var(--space-md);
+  border-radius: var(--radius-lg);
 }
 
 .process-col--statement {
   background-color: var(--color-warm-beige);
-  padding-inline-start: 7.5vw;
+  border: 1px solid rgba(29, 37, 45, 0.12);
 }
 
 .process-col--summary {
   background-color: var(--color-cream);
+  border: 1px solid rgba(29, 37, 45, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -445,7 +450,6 @@ ol {
 
 .process-col--steps {
   background-color: var(--color-accent-blue);
-  padding-inline-end: 7.5vw;
 }
 
 .process-statement {
@@ -503,13 +507,27 @@ ol {
 .process-steps-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .process-step {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  padding-block: var(--space-sm);
+  border-top: 1px solid rgba(247, 244, 237, 0.18);
+}
+
+.process-step:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.process-step-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--color-cream);
 }
 
 .process-step-badge {
@@ -546,6 +564,8 @@ ol {
   .process {
     grid-template-columns: 52fr 27fr 21fr;
     min-height: 670px;
+    padding: var(--space-xl) 7.5vw;
+    gap: var(--space-lg);
   }
 
   .process-col--statement {
@@ -554,14 +574,6 @@ ol {
 
   .process-col {
     padding: 4.5rem var(--space-lg);
-  }
-
-  .process-col--statement {
-    padding-inline-start: 7.5vw;
-  }
-
-  .process-col--steps {
-    padding-inline-end: 7.5vw;
   }
 
   .process-statement {
@@ -599,6 +611,12 @@ ol {
 
   .process-step {
     gap: var(--space-md);
+    padding-block: var(--space-sm);
+  }
+
+  .process-step-icon {
+    width: clamp(20px, 1.4vw, 26px);
+    height: clamp(20px, 1.4vw, 26px);
   }
 
   .process-step-badge {
