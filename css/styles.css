@@ -562,7 +562,7 @@ ol {
 
 @media (min-width: 1024px) {
   .process {
-    grid-template-columns: 52fr 27fr 21fr;
+    grid-template-columns: 48fr 27fr 26fr;
     min-height: 670px;
     padding: var(--space-xl) 7.5vw;
     gap: var(--space-lg);
@@ -574,6 +574,10 @@ ol {
 
   .process-col {
     padding: 4.5rem var(--space-lg);
+  }
+
+  .process-col--steps {
+    padding: 4.5rem var(--space-xl);
   }
 
   .process-statement {
@@ -606,7 +610,7 @@ ol {
   }
 
   .process-steps-list {
-    gap: var(--space-lg);
+    gap: var(--space-xl);
   }
 
   .process-step {
