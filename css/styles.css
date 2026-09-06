@@ -352,11 +352,15 @@ ol {
 }
 
 .hero-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  padding-bottom: 10px;
   margin-bottom: var(--space-md);
 }
 
@@ -733,11 +737,15 @@ ol {
 }
 
 .founder-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .founder-name {
@@ -956,11 +964,15 @@ ol {
 }
 
 .how-i-work-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-lg);
 }
 
@@ -1013,11 +1025,15 @@ ol {
 }
 
 .services-intro-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-md);
 }
 
@@ -1093,11 +1109,15 @@ ol {
 }
 
 .services-closing-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-lg);
 }
 
@@ -1355,11 +1375,15 @@ ol {
 }
 
 .studio-teaser-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-md);
 }
 
@@ -1716,11 +1740,15 @@ ol {
 }
 
 .work-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-md);
 }
 
@@ -1886,11 +1914,15 @@ ol {
 }
 
 .contact-eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
   color: var(--color-ivory);
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  padding-bottom: 10px;
   margin-bottom: var(--space-md);
 }
 
@@ -2194,4 +2226,27 @@ ol {
     justify-content: space-between;
     font-size: 17px;
   }
+}
+
+/* ==========================================================================
+   Eyebrow accent line — dark-section section labels
+   Thin cobalt line beneath small ivory eyebrows on charcoal backgrounds.
+   Each eyebrow is inline-block so the line (75% width) tracks its own
+   text width rather than the full container.
+   ========================================================================== */
+.hero-eyebrow::after,
+.founder-eyebrow::after,
+.how-i-work-eyebrow::after,
+.services-intro-eyebrow::after,
+.services-closing-eyebrow::after,
+.studio-teaser-eyebrow::after,
+.work-eyebrow::after,
+.contact-eyebrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75%;
+  height: 1px;
+  background-color: var(--color-accent-blue);
 }
